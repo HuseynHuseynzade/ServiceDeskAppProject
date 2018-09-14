@@ -1,0 +1,94 @@
+﻿@model RegisterModel
+    <main class="page-main page-fullpage main-anim" id="itempage">
+        <div class="section section-twoside fp-auto-height-responsive section-item" data-section="item-alpha">
+            <div class="section-cover-tier mask-black" style="background-image:url('/images/bg-reg.jpg')">
+                <div class="cover-content">
+                    <div class="title-desc">
+                    </div>
+                </div>
+            </div>
+            <div class="section-wrapper largewidth">
+                <div class="item row">
+                    <div class="col-12 col-md-4">
+                    </div>
+                    <div class="col-12 col-md-8 center-vh">
+                        <div class="section-content anim scrollable">
+
+                            <article class="article article-light">
+                                <div class="article-content">
+                                    <div class="wrapper">
+                                        <h2>Регистрация</h2>
+                                        <div class="item row justify-content-between mt-4">
+                                            <div class="col-md-12 center-vh">
+                                                <div class="section-content anim">
+                                                    <div asp-validation-summary="ModelOnly"></div>
+                                                    <form method="post" asp-action="Register" asp-controller="Account">
+
+                                                        <div class="form-group">
+                                                            <label asp-for="Name" class="control-label">Имя</label>
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control" asp-for="Name" placeholder="Введите ваше имя" />
+                                                                <span asp-validation-for="Name"></span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label asp-for="Email" class="control-label">Email</label>
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control" asp-for="Email" placeholder="Введите адрес электронной почты" />
+                                                                <span asp-validation-for="Email"></span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label asp-for="PhoneNumber" class="control-label">Номер телефона</label>
+                                                            <div class="input-group">
+                                                                <input type="tel" class="form-control" asp-for="PhoneNumber" placeholder="Введите номер телефона" />
+                                                                <span asp-validation-for="PhoneNumber"></span>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="form-group">
+                                                            <label asp-for="Username" class="control-label">Имя пользователя</label>
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control" asp-for="Username" placeholder="Введите имя пользователя" />
+                                                                <span asp-validation-for="Username"></span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label asp-for="Password" class="control-label">Пароль</label>
+                                                            <div class="input-group">
+                                                                <input type="password" class="form-control" asp-for="Password" placeholder="Введите ваш пароль" />
+                                                                <span asp-validation-for="Password"></span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label asp-for="ConfirmPassword" class="control-label">Подтвердите Пароль</label>
+                                                            <div class="input-group">
+                                                                <input type="password" class="form-control" asp-for="ConfirmPassword" placeholder="Подтвердите ваш пароль" />
+                                                                <span asp-validation-for="ConfirmPassword"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="btns-action mt-4">
+                                                                <button class="btn btn-transp-arrow btn-outline btn-primary btn-round">Сохранить <span class="icon arrow-right"></span></button>
+                                                        </div>
+                                                    </form>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+   

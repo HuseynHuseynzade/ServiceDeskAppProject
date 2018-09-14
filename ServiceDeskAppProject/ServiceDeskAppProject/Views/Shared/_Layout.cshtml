@@ -1,0 +1,223 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>@ViewBag.Title</title>
+    <link rel="shortcut icon" asp-href-include="images/icons/favicon.ico">
+    <link rel="shortcut icon" asp-href-include="images/icons/favicon.png">
+    <meta name="description" content="@ViewBag.Description">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <!-- twitter Meta -->
+    <meta name="twitter:site" content="">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:card" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+    <!-- Facebook Meta -->
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:secure_url" content="">
+    <meta property="og:image:type" content="image/jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <!-- Web fonts and Web Icons -->
+    <link rel="stylesheet" asp-href-include="~/css/fonts/opensans/stylesheet.css">
+    <link rel="stylesheet" asp-href-include="~/css/fonts/bebas/stylesheet.css">
+    <link rel="stylesheet" asp-href-include="~/css/fonts/ionicons.min.css">
+    <link rel="stylesheet" asp-href-include="~/css/fonts/font-awesome.min.css">
+    <link rel="stylesheet" asp-href-include="~/lib/css/pageloader.css">
+    <link asp-href-include="~/lib/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" asp-href-include="~/lib/css/swiper.min.css">
+    <link rel="stylesheet" asp-href-include="~/lib/css/jquery.fullpage.min.css">
+    <link rel="stylesheet" asp-href-include="~/lib/vegas/vegas.min.css">
+    <link rel="stylesheet" asp-href-include="~/css/main.css">
+
+    <link rel="stylesheet" asp-href-include="~/css/style-default.css">
+
+    <script asp-src-include="~/lib/js/modernizr-2.7.1.min.js"></script>
+</head>
+
+<body id="menu" class="body-page">
+    <!--[if lt IE 8]>
+              <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+          <![endif]-->
+
+
+    <div class="page-loader" id="page-loader">
+        <div>
+            <div class="icon ion-spin"></div>
+            <p>загрузка</p>
+        </div>
+    </div>
+
+
+    <header class="page-header navbar page-header-alpha scrolled-white menu-right topmenu-right">
+        <button class="navbar-toggler site-menu-icon" id="navMenuIcon">
+            <span class="menu-icon menu-icon-dot">
+                <span class="bars">
+                    <span class="bar1"></span>
+                    <span class="bar2"></span>
+                    <span class="bar3"></span>
+                </span>
+            </span>
+        </button>
+
+        <a class="navbar-brand" href="#home">
+            <span class="logo">
+                <img class="light-logo" src="~/images/logo.png" alt="Logo">
+            </span>
+            <span class="text">
+                <span class="line">ServiceDesk</span>
+                <span class="line sub">мы вам поможем</span>
+            </span>
+        </a>
+
+        <div class="all-menu-wrapper" id="navbarMenu">
+            <nav class="navbar-topmenu">
+                <ul class="navbar-nav navbar-nav-actions">
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn-links dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="ion-person"></span> ВОЙТИ
+                            </button>
+                            <div class="dropdown-menu ddnl" aria-labelledby="dropdownMenuButton">
+                                <form>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" id="inputPassword1" placeholder="Пароль">
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-default">ВОЙТИ</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-white btn-round btn-border-none" asp-action="Register" asp-controller="Account">
+                            РЕГИСТРАЦИЯ
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn-links dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="ion-ios-world-outline"></i> РУС
+                            </button>
+                            <div class="dropdown-menu ddn" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">AZE</a>
+                                <a class="dropdown-item" href="#">RUS</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="navbar-mainmenu">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">
+                            Главная
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">УСЛУГИ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#support">ПОДДЕРЖКА</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">F.A.Q</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#partners">ПАРТНЕРЫ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#license">ЛИЦЕНЗИИ</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="navbar-sidebar ">
+                <ul class="navbar-nav" id="qmenu">
+
+                    <li class="nav-item" data-menuanchor="home">
+                        <a href="#home">
+                            <i class="icon ion-ios-home-outline"></i>
+                            <span class="txt">Главная</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item" data-menuanchor="about">
+                        <a href="#about">
+                            <i class="icon ion-ios-information-outline"></i>
+                            <span class="txt">О НАС</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item" data-menuanchor="services">
+                        <a href="#services">
+                            <i class="icon ion-ios-list-outline"></i>
+                            <span class="txt">УСЛУГИ</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item" data-menuanchor="support">
+                        <a href="#support">
+                            <i class="icon ion-ios-list-outline"></i>
+                            <span class="txt">ПОДДЕРЖКА</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item" data-menuanchor="faq">
+                        <a href="#faq">
+                            <i class="icon ion-ios-albums-outline"></i>
+                            <span class="txt">F.A.Q</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item" data-menuanchor="partners">
+                        <a href="#partners">
+                            <i class="icon ion-ios-compose-outline"></i>
+                            <span class="txt">ПАРТНЕРЫ</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item" data-menuanchor="license">
+                        <a href="#license">
+                            <i class="icon ion-ios-telephone-outline"></i>
+                            <span class="txt">ЛИЦЕНЗИИ</span>
+                        </a>
+                    </li>
+
+                    <!-- <li class="nav-item" data-menuanchor="register">
+                      <a href="#register">
+                        <i class="icon ion-ios-compose-outline"></i>
+                        <span class="txt">РЕГИСТРАЦИЯ</span>
+                      </a>
+                    </li> -->
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    @RenderBody();
+
+    <script src="~/lib/vendor/jquery-1.12.4.min.js"></script>
+    <script src="~/lib/js/popper.min.js"></script>
+    <script src="~/lib/js/bootstrap.min.js"></script>
+    <script src="~/lib/js/scrolloverflow.min.js"></script>
+    <script src="~/lib/js/all.js"></script>
+    <script src="~/lib/particlejs/particles.min.js"></script>
+    <script src="~/lib/js/form_script.js"></script>
+    <script src="~/lib/js/main.js"></script>
+
+    <partial name="_ValidationScriptsPartial" />
+</body>
+</html>
